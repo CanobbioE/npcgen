@@ -38,7 +38,7 @@ func (a *Aspect) GenHeight(race string, age string) {
 	switch race {
 	case "Halfling":
 		minHeight = 90
-		maxHeight = 90
+		maxHeight = 100
 	case "Nano":
 		minHeight = 120
 		maxHeight = 150
