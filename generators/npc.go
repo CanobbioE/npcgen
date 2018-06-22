@@ -17,6 +17,7 @@ type NPC struct {
 	voice          string
 	character      string
 	aspect         *Aspect
+	stats          *Stats
 }
 
 // GenName randomly generates the NPC's name, based on its gender.
@@ -54,7 +55,22 @@ func (n *NPC) String() string {
 		"\n" + "Nazione: " + n.nation +
 		"\n" + "Voce: " + n.voice +
 		"\n" + "Carattere: " + n.character +
-		"\n" + "Aspetto: " + n.aspect.String() + "\n"
+		"\n" + "Aspetto: " + n.aspect.String() +
+		"\n" + n.stats.String()
 
 	return ret
+}
+
+// GenStats randomly generate statistics for the NPC.
+func (n *NPC) GenStats() {
+	stats := Stats{}
+
+	stats.str = rand.Int() % 20
+	stats.dex = rand.Int() % 20
+	stats.con = rand.Int() % 20
+	stats.iq = rand.Int() % 20
+	stats.wis = rand.Int() % 20
+	stats.cha = rand.Int() % 20
+
+	n.stats = &stats
 }

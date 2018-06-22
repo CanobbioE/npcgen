@@ -21,6 +21,7 @@ func GenerateNPC() *NPC {
 	npc.voice = lists.Voices[rand.Int()%len(lists.Voices)]
 	npc.character = lists.Characters[rand.Int()%len(lists.Characters)]
 	npc.GenAspect()
+	npc.GenStats()
 
 	return &npc
 }
