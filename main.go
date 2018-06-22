@@ -1,6 +1,11 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/CanobbioE/npcgen/generators"
+)
+
 func main() {
-	// generate random npc
-	// pretty print to stdout
+	fmt.Println(npcgen.GenerateNPC().String())
 }
