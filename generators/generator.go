@@ -1,11 +1,17 @@
 package npcgen
 
-import "math/rand"
-import "github.com/CanobbioE/npcgen/generators/lists"
+import (
+	"math/rand"
+	"time"
+
+	"github.com/CanobbioE/npcgen/generators/lists"
+)
 
 // GenerateNPC returns the pointer to a newly generated random npc.
 func GenerateNPC() *NPC {
 	npc := NPC{}
+
+	rand.Seed(time.Now().UTC().UnixNano())
 
 	npc.genderIsFemale = rand.Int()%2 == 0
 	npc.GenName()
