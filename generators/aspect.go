@@ -64,7 +64,7 @@ func (a *Aspect) GenHeight(race string, age string) {
 // String returns a string representation of the Aspect object.
 func (a *Aspect) String() string {
 	ret := "\n\t" + "Capelli: " + a.hairs.style +
-		" " + a.hairs.color +
+		", " + a.hairs.color +
 		"\n\t" + "Occhi: " + a.eyes +
 		"\n\t" + "Altezza: " + a.height +
 		"\n\t" + "Pelle: " + a.skin
