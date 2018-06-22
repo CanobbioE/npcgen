@@ -5,18 +5,21 @@ This is a random NPC generator for a campaign in D&amp;D 5e I runned. Some conte
 ## Sample output
 
 ```
-Nome: Muscled Madalynn
-Eta: giovane
-Sesso: F
-Razza: Gnomo
-Nazione: Beriel
-Voce: afflitta
-Carattere: focoso
+Nome: Adalbert Galpsi
+Eta: adulto
+Sesso: M
+Razza: Mezzorco
+Nazione: Other
+Voce: piagnucolosa
+Carattere: soave
 Aspetto: 
-	Capelli: Radi, Giallo pastello
-	Occhi: Grigio ardesia scuro
-	Altezza: 99
-	Pelle: Blu oltremare
+	Capelli: Lunghi, Porpora
+	Occhi: Kaki chiaro
+	Altezza: 168
+	Pelle: Fucsia Bordesto Lillato
+
+STR	DEX	CON	INT	WIS	CHA
+14	15	6	7	6	12	
 ```
 
 ## How does it work
