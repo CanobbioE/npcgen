@@ -37,6 +37,7 @@ func (n *NPC) GenAspect() {
 	aspect.eyes = lists.Colors[rand.Int()%len(lists.Colors)]
 	aspect.GenHeight(n.race, n.age)
 	aspect.skin = lists.Colors[rand.Int()%len(lists.Colors)]
+	n.aspect = &aspect
 }
 
 // String returns a string representation of the NPC object.
